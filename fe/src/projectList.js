@@ -141,7 +141,7 @@ const ProjectsList = () => {
             ))}
           </Form>
         </Col>
-        {/* <Col md={10}>
+        <Col md={10}>
           <Table striped bordered hover>
             <thead>
               <tr>
@@ -193,46 +193,6 @@ const ProjectsList = () => {
               )}
             </tbody>
           </Table>
-        </Col> */}
-        <Col md={10}>
-          <Row>
-            {filter.length > 0 ? (
-              filter.map((project) => (
-                <Col md={3}>
-                  <Card className="mb-3" key={project._id}>
-                    <Card.Img
-                      variant="top"
-                      src="/images/ipa2.jpg"
-                      alt={project.name}
-                      style={{ height: "200px", objectFit: "cover" }}
-                    />
-                    <Card.Body>
-                      <Card.Title>{project.name}</Card.Title>
-                      <Card.Subtitle className="mb-2">
-                        Department: {project.departmentName}
-                      </Card.Subtitle>
-                    </Card.Body>
-                    <Card.Body className="text-center">
-                      <Card.Text text="primary" className="text-center">
-                        <strong>Description:</strong> {project.description}
-                      </Card.Text>
-                      <Card.Text className="text-center">
-                        <strong>Start Date:</strong> {project.startDate}
-                      </Card.Text>
-                      <Card.Text className="text-center">
-                        <strong>Type:</strong> {project.type}
-                      </Card.Text>
-                      <Link to={`/employees/${project.departmentId}`}>
-                        <Button variant="primary">View detail</Button>
-                      </Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))
-            ) : (
-              <p className="text-center">No projects available</p>
-            )}
-          </Row>
         </Col>
       </Row>
 

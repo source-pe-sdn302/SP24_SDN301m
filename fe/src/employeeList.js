@@ -1,21 +1,10 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import {
-  Table,
-  Button,
-  Modal,
-  Form,
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+import { Table, Form, Container, Row, Col } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 const EmployeesList = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [modalType, setModalType] = useState("");
   const [employees, setEmployees] = useState([]);
-  const [selectedCourse, setSelectedCourse] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState([]);
   const [depName, setDepName] = useState("");
@@ -52,21 +41,6 @@ const EmployeesList = () => {
     );
     setFilter(filtered);
   }, [searchTerm, employees]);
-  const handleModalOpen = (type, course = null) => {
-    setModalType(type);
-    setSelectedCourse(course);
-    setShowModal(true);
-  };
-
-  const handleModalClose = () => {
-    setShowModal(false);
-    setSelectedCourse(null);
-  };
-
-  const handleSave = () => {
-    // Logic for adding/updating/deleting courses
-    setShowModal(false);
-  };
 
   return (
     <Container>
@@ -78,17 +52,12 @@ const EmployeesList = () => {
       <Link to="/">Back to home</Link>
       <h3>Department: {depName.name}</h3>
       <Row className="mb-3">
-        <Col md={9}>
+        <Col md={12}>
           <Form.Control
             placeholder="Search by Name"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-        </Col>
-        <Col md={3} className="text-end">
-          <Button variant="primary" onClick={() => handleModalOpen("add")}>
-            Add employee
-          </Button>
         </Col>
       </Row>
       <Row>
@@ -125,55 +94,6 @@ const EmployeesList = () => {
           </Table>
         </Col>
       </Row>
-
-      <Modal show={showModal} onHide={handleModalClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            {modalType === "add"
-              ? "Add Course"
-              : modalType === "update"
-              ? "Update Course"
-              : "Delete Course"}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {modalType === "delete" ? (
-            <p>Are you sure you want to delete this course?</p>
-          ) : (
-            <Form>
-              <Form.Group className="mb-3">
-                <Form.Label>Course Title</Form.Label>
-                <Form.Control
-                  type="text"
-                  defaultValue={selectedCourse?.Title || ""}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Description</Form.Label>
-                <Form.Control
-                  type="text"
-                  defaultValue={selectedCourse?.Description || ""}
-                />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Instructor ID</Form.Label>
-                <Form.Control
-                  type="text"
-                  defaultValue={selectedCourse?.InstructorId || ""}
-                />
-              </Form.Group>
-            </Form>
-          )}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleModalClose}>
-            Cancel
-          </Button>
-          <Button variant="primary" onClick={handleSave}>
-            {modalType === "delete" ? "Confirm" : "Save"}
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </Container>
   );
 };

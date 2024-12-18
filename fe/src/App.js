@@ -11,29 +11,6 @@ import UpdateProject from "./updateProject";
 const App = () => (
   <Router>
     <Container>
-      {/* <Row>
-        <Col>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
-            <Link className="navbar-brand" to="/">
-              Project App
-            </Link>
-            <div className="collapse navbar-collapse">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/home">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    Projects
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </Col>
-      </Row> */}
       <Routes>
         <Route path="/" element={<ProjectsList />} />
         <Route path="/employees/:dept" element={<EmployeesList />} />
