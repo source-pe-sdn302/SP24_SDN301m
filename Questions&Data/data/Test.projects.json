@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "670f8e8c8b56a8c3333a3333"
+  },
+  "name": "Project A",
+  "description": "Development of a new software application.",
+  "startDate": "2024-03-01",
+  "type": "Software",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333a2222"
+  },
+  "createdAt": {
+    "$date": "2024-03-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670f8e8c8b56a8c3333b3333"
+  },
+  "name": "Project B",
+  "description": "Launch of a marketing campaign.",
+  "startDate": "2024-04-01",
+  "type": "Marketing",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333b2222"
+  },
+  "createdAt": {
+    "$date": "2024-04-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670f8e8c8b56a8c3333c3333"
+  },
+  "name": "Project C",
+  "description": "Organizing a corporate team-building event.",
+  "startDate": "2024-05-01",
+  "type": "Event",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333c2222"
+  },
+  "createdAt": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-02T00:00:00.000Z"
+  }
+}]

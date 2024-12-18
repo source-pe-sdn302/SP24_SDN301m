@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "660f8e8c8b56a8c3333a2222"
+  },
+  "name": "Engineering",
+  "createdAt": {
+    "$date": "2024-01-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "660f8e8c8b56a8c3333b2222"
+  },
+  "name": "Marketing",
+  "createdAt": {
+    "$date": "2024-02-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "660f8e8c8b56a8c3333c2222"
+  },
+  "name": "Human Resources",
+  "createdAt": {
+    "$date": "2024-04-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-02T00:00:00.000Z"
+  }
+}]

@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333a1111"
+  },
+  "name": "John Doe",
+  "dob": "1990-01-01",
+  "gender": "Male",
+  "position": "Engineer",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333a2222"
+  },
+  "createdAt": {
+    "$date": "2024-01-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333b1111"
+  },
+  "name": "Jane Smith",
+  "dob": "1995-02-01",
+  "gender": "Female",
+  "position": "Manager",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333b2222"
+  },
+  "createdAt": {
+    "$date": "2024-02-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333c1111"
+  },
+  "name": "Alice Johnson",
+  "dob": "1988-06-15",
+  "gender": "Female",
+  "position": "Designer",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333a2222"
+  },
+  "createdAt": {
+    "$date": "2024-03-01T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-02T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333d1111"
+  },
+  "name": "Robert Brown",
+  "dob": "1985-10-20",
+  "gender": "Male",
+  "position": "Senior Engineer",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333a2222"
+  },
+  "createdAt": {
+    "$date": "2024-03-15T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-16T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333e1111"
+  },
+  "name": "Emily Davis",
+  "dob": "1992-12-10",
+  "gender": "Female",
+  "position": "Marketing Specialist",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333b2222"
+  },
+  "createdAt": {
+    "$date": "2024-04-05T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-06T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "650f8e8c8b56a8c3333f1111"
+  },
+  "name": "Michael Johnson",
+  "dob": "1990-03-25",
+  "gender": "Male",
+  "position": "HR Manager",
+  "department": {
+    "$oid": "660f8e8c8b56a8c3333c2222"
+  },
+  "createdAt": {
+    "$date": "2024-05-10T00:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T00:00:00.000Z"
+  }
+}]
